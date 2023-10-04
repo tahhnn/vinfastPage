@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+.container{
+    width: 100%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-left: 30px;
+}
+.head ,.menu, .servies{
+    display: flex;
+    align-items: center;
+}
+.menu {
+    margin-left: 30px;
+}
+
+.menu .servies {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px; 
+}
+
+.menu .servies a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s; 
+}
+
+.menu .servies:hover {
+    background-color: #000; 
+    border-radius: 10px;
+}
+
+.menu .servies:hover a {
+    color: rgb(255, 255, 255); 
+}
+.active{
+    color: blue;
+}
+
+.btn button{
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    font-weight: bold;
+    background: #ffffff;
+    transition: 0.3s ease-in;
+}
+.btn button:hover{
+    background-color: rgb(255, 223, 223);
+}
+.btn button:active{
+    font-weight: 900;
+    background-color: #ffffff;
+}
+/* banner */
+.banner img{
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* main */
+main{
+    display: flex;
+
+    justify-content: space-evenly;
+    padding: 20px 20px;
+}
+.anh img{
+    height: 200px;
+    transition:  1s all ease-in-out;
+}
+.anh img:hover{
+    transform: scale(1.3,1.3)
+}
+.anh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sanpham p,h4{
+    text-align: center;
+    line-height: 30px;
+}
+.infor li{
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    list-style: disc;
+}
+/* footer-logo */
+.footer-logo{
+    
+    padding-top: 20px;
+}
+.footer-logo img{
+    background-position: center;
+    width: 100%;
+    
+}
+/* footer */
+footer{
+    height: 100px;
+    background-color: #021A34;
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.foot p{
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+
+}
+.form input{
+    height: 40px;
+    border: 2px solid #FFA800;
+    background: #021A34;
+    color: #ffffff;
+    padding-left: 10px;
+
+}
+
+.form button{
+    width: 120px;
+    height: 40px;
+    background-color: #FFA800;
+    border: #FFA800;
+}
+.btn-scroll{
+    position: fixed;
+    bottom: 10%;
+    right:50px;
+    display: block;
+    padding: 5px;
+    border: #ffffff;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+.btn-scroll:hover{
+    background-color: #8f8f8f;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
